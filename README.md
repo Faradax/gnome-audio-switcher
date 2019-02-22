@@ -1,10 +1,16 @@
-# gnome-audio-switcher
+# Gnome Audio Switcher
 One-Click widget to cycle all sink-inputs through available audio sinks.
 
 For two available sinks - for example, a headset and speakers - that basically means a painless, one-click toggle!
 
-# Troubleshooting
-## Some applications won't move their audio streams
+## Installation
+### From git
+If you want to clone this repository to try out the extension, you'll need to clone it to this directory:
+
+`~/.local/share/gnome-shell/extensions/audio-switcher@faradax.io`
+
+## Troubleshooting
+### Some applications won't move their audio streams
 German blogger Felix Becker has a [short blog post](https://metacoder.de/entry/Steam---X-Plane-auf-Linux--Pavucontrol-erlaubt-Umschalten-des-Output-devices-nicht-13) which concludes that for applications using [openal-soft](https://github.com/kcat/openal-soft), a *config file* has to be created or edited to be able to move their streams:
 
 `~/.alsoftrc`:
